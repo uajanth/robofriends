@@ -1,12 +1,15 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import CardList from "./CardList";
+import SearchBox from "./SearchBox";
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
+      <div className="tc">
+        <h1>RoboFriends</h1>
+        <SearchBox />
         <CardList />
-      </Fragment>
+      </div>
     );
   }
 }
