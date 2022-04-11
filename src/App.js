@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import Card from "./Card";
+import CardList from "./CardList";
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <Card name="Ajanth" email="contact@ajanth.dev"/>
+        <CardList />
       </Fragment>
     );
   }
