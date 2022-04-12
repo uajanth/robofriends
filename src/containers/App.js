@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import "tachyons";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import Scroll from "./Scroll";
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
+import Scroll from "../components/Scroll";
 
 class App extends Component {
   constructor() {
@@ -22,10 +22,11 @@ class App extends Component {
   }
 
   render() {
-    const filteredRobots = this.state.robots.filter((robot) => {
+    const {robots, searchField} = this.state
+    const filteredRobots = robots.filter((robot) => {
       return robot.name
         .toLowerCase()
-        .includes(this.state.searchField.toLowerCase());
+        .includes(searchField.toLowerCase());
     });
 
     return (
