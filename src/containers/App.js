@@ -6,8 +6,8 @@ import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { robots: [], searchField: "" };
   }
 
